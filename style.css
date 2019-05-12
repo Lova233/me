@@ -48,6 +48,10 @@
     border-spacing: 0;
   }
 
+  body{
+    overflow: hidden;
+  }
+
 
   html{
     overflow: hidden;
