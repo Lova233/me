@@ -1,0 +1,477 @@
+
+
+  /*Normalizer*/
+
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;    
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+      line-height: 1;
+
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+
+  html{
+    overflow: hidden;
+  }
+
+  /* General */
+
+  section{
+      width: 70%;
+      display: flex;           /* establish flex container */
+      flex-direction: column;  /* make main axis vertical */
+      justify-content: center; /* center items vertically, in this case */
+      align-items: center;     /* center items horizontally, in this case */
+      min-height: 100vh;
+      margin: 0 auto;
+      padding:25px;
+  }
+  /* thypography */
+
+  a{  
+    color: #0881af;
+    font-weight: bold;
+    cursor: pointer;
+
+  }
+
+  .lasagna{
+    text-align: right;
+  }
+
+  a>i{
+      margin: 100px;
+
+  }
+  #me{
+  }
+
+  .images{
+    align-self: flex-end;
+    height: 200px;
+    display: flex;
+  }
+
+
+  .label{
+      background-color: #41c9ff;
+      color: white;
+      width: 100px;
+      height: 40px;  
+      -webkit-box-shadow: 1px 1px 22px 0px rgba(143,143,143,1);
+      -moz-box-shadow: 1px 1px 22px 0px rgba(143,143,143,1);
+      box-shadow: 1px 1px 22px 0px rgba(143,143,143,1);
+  }
+
+
+  :hover.label{
+      background-color: #0881af;
+      -webkit-box-shadow: 1px 1px 22px 0px rgba(143,143,143,1);
+      -moz-box-shadow: 1px 1px 22px 0px rgba(143,143,143,1);
+      box-shadow: 1px 1px 22px 0px rgba(143,143,143,1);
+      
+    
+  }
+
+
+
+  #home{
+
+  }
+
+
+
+  p{
+          font-family: 'Raleway', sans-serif;
+      font-size: 1em;
+      line-height: 30px;
+      letter-spacing: 3px;
+      color: black;
+      text-align: justify;
+      width: 90%;
+      margin: 0 auto;
+      
+  }
+
+  h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.8rem;
+    color: black;
+    text-align: left;
+    margin: auto 0;
+    width: 100%;
+    font-weight: normal;
+    line-height: 75px;
+  }
+
+  h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.6rem;
+    font-weight: normal;
+    color: black;
+    text-align: left;
+    line-height: 75px;
+    width: 100%;
+  }
+
+
+
+
+  h3{
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.4em;
+      color: black;
+      text-align: left;
+      line-height: 50px;
+      font-weight:  500;
+      margin-top: 20px;
+  }
+
+  .nav{
+      display: flex;
+  }
+
+  .slide{
+      width: 80%;
+      height: 600px;
+  /*
+      -webkit-box-shadow: 1px 1px 22px 0px rgba(222,222,222,1);
+      -moz-box-shadow: 1px 1px 22px 0px rgba(222,222,222,1);
+      box-shadow: 1px 1px 22px 0px rgba(222,222,222,1);
+  */
+      padding: 10px
+  }
+  .slideContent{
+      display: flex;
+      align-items: center;
+      width: 100%;
+    
+  }
+
+
+  img{
+    max-width: 200px;
+  }
+
+
+  h4{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    font-weight: bold;
+    color: white!important;
+  }
+
+  h4 > a{
+    color: white!important;
+  }
+
+
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+
+  h5{
+          font-family: 'Raleway', sans-serif;
+          font-size: 2.5em;
+          color: black;
+          text-align: left;
+          color: #0881af;
+          padding: 20px;
+      
+  }
+  h6{
+      
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.8em;
+      color: black;
+      line-height: 30px;  
+      text-align: center;
+      animation: 3s ease-out 0s 1 Appear;
+      animation-delay: 2s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+  }
+
+  h7{
+      
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.8em;
+      color: black;
+      text-align: left;
+      line-height: 50px;    
+      animation: 3s ease-out 0s 1 Appear;
+      animation-delay: 7s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+  }
+
+  .blue{
+      color: #0881af;
+      font-weight: bold;
+      cursor: pointer;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items:center;
+    align-items: center;
+  }
+
+
+  .fa-github{
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .fa-instagram{
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;    
+  }
+
+  .fa-linkedin{
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .blue:hover{
+    color: #0881af;
+    font-weight: bold;
+  }
+
+  #blueme
+
+
+  .red{
+      color: #d74955;
+  }
+
+  strong{
+      font-weight: bold; 
+        font-size: 1.4em;
+
+  }
+
+  #lasagna{
+    display: none;
+  }
+
+  #postcard{
+    display: none;
+  }
+
+  .light{
+      font-style: italic;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.6em;
+  }
+
+
+  /* Icons */
+
+
+
+  .icon{
+  filter: invert(100);
+  width: 250px;
+  }
+
+
+
+
+
+  /*general*/
+
+  #myHeader{
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      background-color: white;
+      z-index: 999;
+      
+  }
+
+  .wrapper{
+      width: 80%;
+      margin: 0 auto;
+    
+  }
+  .wrapperNav{
+
+      
+  }
+
+  .wrapperNav > a{
+
+  }
+
+  .nope{
+      width: 100%;
+      height: 400px;
+      background-color: pink;
+      margin: 10px;
+  }
+
+  .mockUp{
+      max-width: 00px;
+      margin: 0 auto;
+  }
+
+  .tech{
+    width: 150px;
+      display: flex;
+      justify-content: space-between;
+    font-size: 1.5em;
+      color:black;
+  }
+
+  #project1{
+      width: 100%;
+      height: 400px;
+      margin-top: 30px;
+      background-image: url(asset/nopeMock.png);
+      background-repeat: no-repeat;
+      background-position: center; 
+
+  }
+
+
+  #bio{
+      
+      background-color: #0881af,
+  }
+
+  #project2{
+      width: 100%;
+      height: 400px;
+      margin-top: 30px;
+          background-image: url(asset/atyMock.png);
+      background-repeat: no-repeat;
+      background-position: center; 
+  }
+  #project3{
+      width: 100%;
+      height: 400px;
+      margin-top: 30px;
+      background-image: url(asset/CsMock.png);
+      background-repeat: no-repeat;
+        background-position: center; 
+  }
+header{
+  position: fixed;
+  top: 0px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #0881af;
+}
+  #repo{
+      font-size: 1.5em;
+  }
+  .fa-heart{
+    color: red;
+  }
+  footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0881af;
+}
+
+  @media only screen and (max-width: 1000px){
+    .grid{
+      display: block;
+    }
+    .hide{
+      display: none;
+    }
+  }
+
+
+  @media only screen and (max-width: 800px){
+    section{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 90vh;
+      margin: 0 auto;
+    }
+
+    .lasagna{
+      text-align: left;
+    }
+  
+    h2{
+      display: block;
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.6rem;
+      font-weight: normal;
+      color: black;
+      text-align: left;
+      line-height: 40px;
+      width: 100%;
+    }
+    h3{ 
+      font-family: 'Rubik', sans-serif;
+      font-size: 1em;
+      color: black;
+      text-align: left;
+      line-height: 30px;
+      font-weight: 500;
+    }
+  }
